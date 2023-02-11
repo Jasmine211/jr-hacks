@@ -1,0 +1,137 @@
+import React from 'react'
+
+import styles from './landing-page.module.css'
+
+const LandingPage = (props) => {
+  return (
+    <div>
+      <div className={styles['landing-page']}>
+        <img
+          src="/playground_assets/rectangle113-aam-1100h.png"
+          alt="Rectangle113"
+          className={styles['rectangle1']}
+        />
+        <img
+          src="/playground_assets/rectanglegreen14-i7s-600h.png"
+          alt="Rectanglegreen14"
+          className={styles['rectanglegreen']}
+        />
+        <span className={styles['text']}>
+          <span>Financial literacy you can trust.</span>
+        </span>
+        <span className={styles['text02']}>
+          <span className={styles['text03']}>
+            <span>
+              We strive to bring financial knowledge to underrepresented
+              communities. Empowering
+              <span
+                dangerouslySetInnerHTML={{
+                  __html: ' ',
+                }}
+              />
+            </span>
+            <br></br>
+            <span>
+              the future leaders of tomorrow.
+              <span
+                dangerouslySetInnerHTML={{
+                  __html: ' ',
+                }}
+              />
+            </span>
+            <br></br>
+            <span></span>
+          </span>
+          <span>We welcome you.</span>
+        </span>
+        <img
+          src="/playground_assets/rectangletop17-izfn-200h.png"
+          alt="Rectangletop17"
+          className={styles['rectangletop']}
+        />
+        <img
+          src="/playground_assets/rectanglebottom111-vm3-200h.png"
+          alt="Rectanglebottom111"
+          className={styles['rectanglebottom']}
+        />
+        <img
+          src="/playground_assets/label2112-9588-200h.png"
+          alt="label2112"
+          className={styles['label2']}
+        />
+        <img
+          src="/playground_assets/label3115-bgab-200h.png"
+          alt="label3115"
+          className={styles['label3']}
+        />
+        <img
+          src="/playground_assets/label4116-bo2h-200h.png"
+          alt="label4116"
+          className={styles['label4']}
+        />
+        <img
+          src="/playground_assets/label5117-bee-200h.png"
+          alt="label5117"
+          className={styles['label5']}
+        />
+        <img
+          src="/playground_assets/label6118-bm5l-200h.png"
+          alt="label6118"
+          className={styles['label6']}
+        />
+        <img
+          src="/playground_assets/skyline2120-8f7i-600h.png"
+          alt="skyline2120"
+          className={styles['skyline2']}
+        />
+        <img
+          src="/playground_assets/vector3147-ee9.svg"
+          alt="Vector3147"
+          className={styles['vector']}
+        />
+        <div className={styles['group1']}>
+          <img
+            src="/playground_assets/rectangle33162-k4zyq-200h.png"
+            alt="Rectangle33162"
+            className={styles['rectangle3']}
+          />
+          <img
+            src="/playground_assets/rectangle43163-0ozc-200h.png"
+            alt="Rectangle43163"
+            className={styles['rectangle4']}
+          />
+          <img
+            src="/playground_assets/ellipse13164-biaj-200h.png"
+            alt="Ellipse13164"
+            className={styles['ellipse1']}
+          />
+        </div>
+        <span className={styles['text10']}>
+          <span>Budgeting</span>
+        </span>
+        <span className={styles['text12']}>
+          <span>Building Credit</span>
+        </span>
+        <span className={styles['text14']}>
+          <span>Managing Debt</span>
+        </span>
+        <span className={styles['text16']}>
+          <span>Budgeting</span>
+        </span>
+        <span className={styles['text18']}>
+          <span>Building Credit</span>
+        </span>
+        <span className={styles['text20']}>
+          <span>Managing Debt</span>
+        </span>
+        <img
+          src="/playground_assets/vector7189-hd7f.svg"
+          alt="Vector7189"
+          className={styles['vector1']}
+        />
+      </div>
+    </div>
+  )
+}
+
+export default LandingPage
