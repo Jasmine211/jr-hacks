@@ -1,0 +1,26 @@
+{
+  "name": "jr-hacks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jasmine211/jr-hacks.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jasmine211/jr-hacks/issues"
+  },
+  "homepage": "https://github.com/Jasmine211/jr-hacks#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-handlebars": "^6.0.7",
+    "mongodb": "^5.0.1",
+    "xss": "^1.0.14"
+  }
+}
