@@ -5,7 +5,8 @@ const helpers = require('../helpers')
 const xss = require('xss');
 
 router.get("/", async (req, res) => {
-    return res.render("home")
+    return res.render("home", {title: "Home"})
+   
 })
 
 module.exports = router;
