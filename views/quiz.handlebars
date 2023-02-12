@@ -1,28 +1,18 @@
 <h1>Take our quiz!</h1>
-{{#if error}}
-  <div id="error" class="error">{{error}}</div>
-{{else}}
-  <div id="error" class="error" hidden></div>
-{{/if}}
 
 <form action="/quiz" id="question1" method="POST">
   {{! question1 }}
-  <p>{{question1.question}}</p>
+  <p class="question">{{question1.question}}</p>
+  <input type="radio" id="radio1" name="answer1" value="answer1" />
+  <label for="radio1"> {{question1.choices.[0]}}</label>
+  <br />
+  <input type="radio" id="radio2" name="answer1" value="answer2" />
+  <label>{{question1.choices.[1]}}
+  </label>
+  <br />
 
-  <label>
-    <input type="radio" name="answer1" value="answer1" />
-    {{question1.choices.[0]}}
-  </label>
-  <br />
-  <label>
-    <input type="radio" name="answer1" value="answer2" />
-    {{question1.choices.[1]}}
-  </label>
-  <br />
-  <label>
-    <input type="radio" name="answer1" value="answer3" />
-    {{question1.choices.[2]}}
-  </label>
+  <input type="radio" id="radio3" name="answer1" value="answer3" />
+  <label> {{question1.choices.[2]}} </label>
   <br />
   <button type="submit">Submit</button>
 </form>
@@ -37,20 +27,22 @@
 
 <form action="/quiz" id="question2" method="POST">
   {{! question2 }}
-  <p>{{question2.question}}</p>
+  <p class="question">{{question2.question}}</p>
 
+  <input type="radio" id="radio4" name="answer2" value="answer1" />
   <label>
-    <input type="radio" name="answer2" value="answer1" />
     {{question2.choices.[0]}}
   </label>
   <br />
+  <input type="radio" id="radio5" name="answer2" value="answer2" />
+
   <label>
-    <input type="radio" name="answer2" value="answer2" />
     {{question2.choices.[1]}}
   </label>
   <br />
+
+  <input type="radio" id="radio6" name="answer2" value="answer3" />
   <label>
-    <input type="radio" name="answer2" value="answer3" />
     {{question2.choices.[2]}}
   </label>
   <br />
@@ -65,24 +57,23 @@
   <p>{{explanation2}}</p><br />
 {{/if}}
 
-
 <form action="/quiz" id="question3" method="POST">
   {{! question3 }}
-  <p>{{question3.question}}</p>
+  <p class="question">{{question3.question}}</p>
 
-  <label>
-    <input type="radio" name="answer3" value="answer1" />
-    {{question3.choices.[0]}}
+ 
+    <input type="radio" id="radio7" name="answer3" value="answer1" />
+    <label>{{question3.choices.[0]}}
   </label>
   <br />
-  <label>
-    <input type="radio" name="answer3" value="answer2" />
-    {{question3.choices.[1]}}
+  
+    <input type="radio" id="radio8" name="answer3" value="answer2" />
+  <label> {{question3.choices.[1]}}
   </label>
   <br />
-  <label>
-    <input type="radio" name="answer3" value="answer3" />
-    {{question3.choices.[2]}}
+
+    <input type="radio" id="radio9" name="answer3" value="answer3" />
+    <label>  {{question3.choices.[2]}}
   </label>
   <br />
   <button type="submit">Submit</button>
@@ -96,24 +87,23 @@
   <p>{{explanation3}}</p><br />
 {{/if}}
 
-
 <form action="/quiz" id="question4" method="POST">
   {{! question4 }}
-  <p>{{question4.question}}</p>
+  <p class="question">{{question4.question}}</p>
 
-  <label>
-    <input type="radio" name="answer4" value="answer1" />
-    {{question4.choices.[0]}}
+  
+    <input type="radio" id="radio10"name="answer4" value="answer1" />
+  <label>{{question4.choices.[0]}}
   </label>
   <br />
-  <label>
-    <input type="radio" name="answer4" value="answer2" />
-    {{question4.choices.[1]}}
+ 
+    <input type="radio" id="radio11"name="answer4" value="answer2" />
+    <label> {{question4.choices.[1]}}
   </label>
   <br />
-  <label>
-    <input type="radio" name="answer4" value="answer3" />
-    {{question4.choices.[2]}}
+  
+    <input type="radio" id="radio12"name="answer4" value="answer3" />
+   <label>{{question4.choices.[2]}}
   </label>
   <br />
   <button type="submit">Submit</button>
@@ -127,24 +117,20 @@
   <p>{{explanation4}}</p><br />
 {{/if}}
 
-
 <form action="/quiz" id="question5" method="POST">
   {{! question5 }}
-  <p>{{question5.question}}</p>
-
-  <label>
-    <input type="radio" name="answer5" value="answer1" />
-    {{question3.choices.[0]}}
+  <p class="question">{{question5.question}}</p>
+  <input type="radio"id="radio13" name="answer5" value="answer1" />
+  <label>{{question3.choices.[0]}}
   </label>
   <br />
-  <label>
-    <input type="radio" name="answer5" value="answer2" />
-    {{question5.choices.[1]}}
+  <input type="radio" id="radio14"name="answer5" value="answer2" />
+  <label> {{question5.choices.[1]}}
   </label>
   <br />
-  <label>
-    <input type="radio" name="answer5" value="answer3" />
-    {{question5.choices.[2]}}
+  
+    <input type="radio" id="radio15"name="answer5" value="answer3" />
+   <label> {{question5.choices.[2]}}
   </label>
   <br />
   <button type="submit">Submit</button>

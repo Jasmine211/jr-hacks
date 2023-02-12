@@ -14,6 +14,5 @@ const getCollectionFn = (collection) => {
 };
 
 module.exports = {
-  quiz: getCollectionFn('quiz'),
-  finliteracy: getCollectionFn('finliteracy')
+  quiz: getCollectionFn('quiz')
 };

@@ -4,7 +4,6 @@ const data = require("../data");
 const helpers = require("../helpers");
 
 router.get("/", async (req, res) => {
-  return res.render("credit", {title: "Building Your Credit"})
+  return res.render("debt", {title: "Managing Your Debt"})
 })
 module.exports = router;
-
