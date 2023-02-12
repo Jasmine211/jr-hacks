@@ -4,7 +4,7 @@
   }
 
   body {
-    font-size: 14px;
+    font-size: 18px;
   }
 
   .v21_32, .v21_33, .v21_34{
@@ -357,4 +357,17 @@
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   box-shadow:rgb(000,000,000) 3px 3px 9px 1px;
+}
+
+.infoBody {
+  margin-left: 5%;
+  margin-right: 5%
+}
+
+.correct{
+  color:rgba(13, 97, 11, 0.8799999952316284)
+}
+
+.wrong{
+  color: rgb(141, 31, 31)
 }

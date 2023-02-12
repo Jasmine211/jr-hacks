@@ -1,8 +1,6 @@
 const express = require("express");
 const router = express.Router();
 const data = require("../data");
-const helpers = require("../helpers");
-const xss = require("xss");
 
 router.get("/", async (req, res) => {
   try {
@@ -20,13 +18,13 @@ router.get("/", async (req, res) => {
   }
 });
 router.post("/", async (req, res) => {
-  let answerChoice;
   let answer1 = req.body.answer1;
   let answer2 = req.body.answer2;
   let answer3 = req.body.answer3;
   let answer4 = req.body.answer4;
   let answer5 = req.body.answer5;
   let questions = await data.quiz.getQuestions();
+
   if (answer1) {
     try {
       let checkedAnswer = await data.quiz.checkAnswer("1", answer1);
@@ -63,7 +61,6 @@ router.post("/", async (req, res) => {
     }
   }
 
-
   if (answer3) {
     try {
       let checkedAnswer = await data.quiz.checkAnswer("3", answer3);
@@ -81,7 +78,6 @@ router.post("/", async (req, res) => {
       return res.status(404).render("home");
     }
   }
-
 
   if (answer4) {
     try {

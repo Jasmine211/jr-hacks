@@ -1,5 +1,5 @@
 <h1>Take our quiz!</h1>
-
+<div class="infoBody">
 <form action="/quiz" id="question1" method="POST">
   {{! question1 }}
     <p class="question">{{question1.question}}</p>
@@ -18,9 +18,9 @@
 </form>
 {{#if explanation1}}
   {{#if correct}}
-    <p>Correct!</p>
+    <p class="correct">Correct!</p>
   {{else}}
-    <p>Oops, Wrong Answer</p>
+    <p class="wrong">Oops, Wrong Answer</p>
   {{/if}}
   <p>{{explanation1}}</p><br />
 {{/if}}
@@ -50,9 +50,9 @@
 </form>
 {{#if explanation2}}
   {{#if correct}}
-    <p>Correct!</p>
+    <p class="correct">Correct!</p>
   {{else}}
-    <p>Oops, Wrong Answer</p>
+    <p class="wrong">Oops, Wrong Answer</p>
   {{/if}}
   <p>{{explanation2}}</p><br />
 {{/if}}
@@ -79,9 +79,9 @@
 </form>
 {{#if explanation3}}
   {{#if correct}}
-    <p>Correct!</p>
+    <p class="correct">Correct!</p>
   {{else}}
-    <p>Oops, Wrong Answer</p>
+    <p class="wrong">Oops, Wrong Answer</p>
   {{/if}}
   <p>{{explanation3}}</p><br />
 {{/if}}
@@ -108,9 +108,9 @@
 </form>
 {{#if explanation4}}
   {{#if correct}}
-    <p>Correct!</p>
+    <p class="correct">Correct!</p>
   {{else}}
-    <p>Oops, Wrong Answer</p>
+    <p class="wrong">Oops, Wrong Answer</p>
   {{/if}}
   <p>{{explanation4}}</p><br />
 {{/if}}
@@ -135,9 +135,10 @@
 </form>
 {{#if explanation5}}
   {{#if correct}}
-    <p>Correct!</p>
+    <p class="correct">Correct!</p>
   {{else}}
-    <p>Oops, Wrong Answer</p>
+    <p class="wrong">Oops, Wrong Answer</p>
   {{/if}}
   <p>{{explanation5}}</p><br />
 {{/if}}
+</div>
