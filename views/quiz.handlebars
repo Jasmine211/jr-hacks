@@ -2,19 +2,19 @@
 
 <form action="/quiz" id="question1" method="POST">
   {{! question1 }}
-  <p class="question">{{question1.question}}</p>
-  <input type="radio" id="radio1" name="answer1" value="answer1" />
-  <label for="radio1"> {{question1.choices.[0]}}</label>
-  <br />
-  <input type="radio" id="radio2" name="answer1" value="answer2" />
-  <label>{{question1.choices.[1]}}
-  </label>
-  <br />
+    <p class="question">{{question1.question}}</p>
+    <input type="radio" id="radio1" name="answer1" value="answer1" />
+    <label for="radio1"> {{question1.choices.[0]}}</label>
+    <br />
+    <input type="radio" id="radio2" name="answer1" value="answer2" />
+    <label>{{question1.choices.[1]}}
+    </label>
+    <br />
 
-  <input type="radio" id="radio3" name="answer1" value="answer3" />
-  <label> {{question1.choices.[2]}} </label>
-  <br />
-  <button type="submit">Submit</button>
+    <input type="radio" id="radio3" name="answer1" value="answer3" />
+    <label> {{question1.choices.[2]}} </label>
+    <br />
+    <button type="submit">Submit</button>
 </form>
 {{#if explanation1}}
   {{#if correct}}
@@ -27,26 +27,26 @@
 
 <form action="/quiz" id="question2" method="POST">
   {{! question2 }}
-  <p class="question">{{question2.question}}</p>
+    <p class="question">{{question2.question}}</p>
 
-  <input type="radio" id="radio4" name="answer2" value="answer1" />
-  <label>
+    <input type="radio" id="radio4" name="answer2" value="answer1" />
+    <label>
     {{question2.choices.[0]}}
-  </label>
-  <br />
-  <input type="radio" id="radio5" name="answer2" value="answer2" />
+    </label>
+    <br />
+    <input type="radio" id="radio5" name="answer2" value="answer2" />
 
-  <label>
+    <label>
     {{question2.choices.[1]}}
-  </label>
-  <br />
+    </label>
+    <br />
 
-  <input type="radio" id="radio6" name="answer2" value="answer3" />
-  <label>
+    <input type="radio" id="radio6" name="answer2" value="answer3" />
+    <label>
     {{question2.choices.[2]}}
-  </label>
-  <br />
-  <button type="submit">Submit</button>
+    </label>
+    <br />
+    <button type="submit">Submit</button>
 </form>
 {{#if explanation2}}
   {{#if correct}}
@@ -59,24 +59,23 @@
 
 <form action="/quiz" id="question3" method="POST">
   {{! question3 }}
-  <p class="question">{{question3.question}}</p>
-
- 
+    <p class="question">{{question3.question}}</p>
+  
     <input type="radio" id="radio7" name="answer3" value="answer1" />
     <label>{{question3.choices.[0]}}
-  </label>
-  <br />
-  
+    </label>
+    <br />
+
     <input type="radio" id="radio8" name="answer3" value="answer2" />
-  <label> {{question3.choices.[1]}}
-  </label>
-  <br />
+    <label> {{question3.choices.[1]}}
+    </label>
+    <br />
 
     <input type="radio" id="radio9" name="answer3" value="answer3" />
     <label>  {{question3.choices.[2]}}
-  </label>
-  <br />
-  <button type="submit">Submit</button>
+    </label>
+    <br />
+    <button type="submit">Submit</button>
 </form>
 {{#if explanation3}}
   {{#if correct}}
@@ -89,24 +88,23 @@
 
 <form action="/quiz" id="question4" method="POST">
   {{! question4 }}
-  <p class="question">{{question4.question}}</p>
+    <p class="question">{{question4.question}}</p>
 
-  
-    <input type="radio" id="radio10"name="answer4" value="answer1" />
-  <label>{{question4.choices.[0]}}
-  </label>
-  <br />
- 
-    <input type="radio" id="radio11"name="answer4" value="answer2" />
+    <input type="radio" id="radio10" name="answer4" value="answer1" />
+    <label>{{question4.choices.[0]}}
+    </label>
+    <br />
+
+    <input type="radio" id="radio11" name="answer4" value="answer2" />
     <label> {{question4.choices.[1]}}
-  </label>
-  <br />
-  
-    <input type="radio" id="radio12"name="answer4" value="answer3" />
-   <label>{{question4.choices.[2]}}
-  </label>
-  <br />
-  <button type="submit">Submit</button>
+    </label>
+    <br />
+
+    <input type="radio" id="radio12" name="answer4" value="answer3" />
+    <label>{{question4.choices.[2]}}
+    </label>
+    <br />
+    <button type="submit">Submit</button>
 </form>
 {{#if explanation4}}
   {{#if correct}}
@@ -119,21 +117,21 @@
 
 <form action="/quiz" id="question5" method="POST">
   {{! question5 }}
-  <p class="question">{{question5.question}}</p>
-  <input type="radio"id="radio13" name="answer5" value="answer1" />
-  <label>{{question3.choices.[0]}}
-  </label>
-  <br />
-  <input type="radio" id="radio14"name="answer5" value="answer2" />
-  <label> {{question5.choices.[1]}}
-  </label>
-  <br />
-  
-    <input type="radio" id="radio15"name="answer5" value="answer3" />
-   <label> {{question5.choices.[2]}}
-  </label>
-  <br />
-  <button type="submit">Submit</button>
+    <p class="question">{{question5.question}}</p>
+    <input type="radio" id="radio13" name="answer5" value="answer1" />
+    <label>{{question3.choices.[0]}}
+    </label>
+    <br />
+    <input type="radio" id="radio14" name="answer5" value="answer2" />
+    <label> {{question5.choices.[1]}}
+    </label>
+    <br />
+
+    <input type="radio" id="radio15" name="answer5" value="answer3" />
+    <label> {{question5.choices.[2]}}
+    </label>
+    <br />
+    <button type="submit">Submit</button>
 </form>
 {{#if explanation5}}
   {{#if correct}}
